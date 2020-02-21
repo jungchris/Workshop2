@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var postList = PostListViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        List(self.postList.posts, id: \.id) { post in
+            
+            VStack {
+                Text(post.title)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.leading)
+                Text(post.body)
+            }
+        }
+        
+//        List() {
+//            HStack {
+//                VStack {
+//                    Text("Hello, Workshop!")
+//                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//                    Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+//                }
+//                Text("Date")
+//            }
+//        }
     }
 }
 

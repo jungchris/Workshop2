@@ -15,6 +15,9 @@
 		2D4FA6A624004E1C00F60924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4FA6A424004E1C00F60924 /* LaunchScreen.storyboard */; };
 		2D4FA6B124004E1C00F60924 /* WorkshopSwiftUIBlog3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FA6B024004E1C00F60924 /* WorkshopSwiftUIBlog3Tests.swift */; };
 		2D4FA6BC24004E1C00F60924 /* WorkshopSwiftUIBlog3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FA6BB24004E1C00F60924 /* WorkshopSwiftUIBlog3UITests.swift */; };
+		2D4FA6CD2400508500F60924 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FA6CC2400508500F60924 /* Post.swift */; };
+		2D4FA6CF2400511200F60924 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FA6CE2400511200F60924 /* Webservice.swift */; };
+		2D4FA6D12400525D00F60924 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FA6D02400525D00F60924 /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2D4FA6B724004E1C00F60924 /* WorkshopSwiftUIBlog3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkshopSwiftUIBlog3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4FA6BB24004E1C00F60924 /* WorkshopSwiftUIBlog3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopSwiftUIBlog3UITests.swift; sourceTree = "<group>"; };
 		2D4FA6BD24004E1C00F60924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D4FA6CC2400508500F60924 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2D4FA6CE2400511200F60924 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		2D4FA6D02400525D00F60924 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		2D4FA69824004E1800F60924 /* WorkshopSwiftUIBlog3 */ = {
 			isa = PBXGroup;
 			children = (
+				2D4FA6CB2400503900F60924 /* ViewModels */,
+				2D4FA6CA2400502200F60924 /* Models */,
+				2D4FA6C924004FED00F60924 /* Services */,
 				2D4FA69924004E1800F60924 /* AppDelegate.swift */,
 				2D4FA69B24004E1800F60924 /* SceneDelegate.swift */,
 				2D4FA69D24004E1800F60924 /* ContentView.swift */,
@@ -134,6 +143,30 @@
 				2D4FA6BD24004E1C00F60924 /* Info.plist */,
 			);
 			path = WorkshopSwiftUIBlog3UITests;
+			sourceTree = "<group>";
+		};
+		2D4FA6C924004FED00F60924 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D4FA6CE2400511200F60924 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D4FA6CA2400502200F60924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D4FA6CC2400508500F60924 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D4FA6CB2400503900F60924 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2D4FA6D02400525D00F60924 /* PostListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +302,10 @@
 			files = (
 				2D4FA69A24004E1800F60924 /* AppDelegate.swift in Sources */,
 				2D4FA69C24004E1800F60924 /* SceneDelegate.swift in Sources */,
+				2D4FA6D12400525D00F60924 /* PostListViewModel.swift in Sources */,
 				2D4FA69E24004E1800F60924 /* ContentView.swift in Sources */,
+				2D4FA6CF2400511200F60924 /* Webservice.swift in Sources */,
+				2D4FA6CD2400508500F60924 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
